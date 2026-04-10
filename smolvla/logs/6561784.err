@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/fs/nexus-scratch/vvs22/conda/envs/lerobot/bin/lerobot-train", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/fs/nexus-scratch/vvs22/lerobot/src/lerobot/scripts/lerobot_train.py", line 563, in main
+    train()
+  File "/fs/nexus-scratch/vvs22/lerobot/src/lerobot/configs/parser.py", line 233, in wrapper_inner
+    response = fn(cfg, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/fs/nexus-scratch/vvs22/lerobot/src/lerobot/scripts/lerobot_train.py", line 170, in train
+    cfg.validate()
+  File "/fs/nexus-scratch/vvs22/lerobot/src/lerobot/configs/train.py", line 123, in validate
+    raise FileExistsError(
+FileExistsError: Output directory /fs/nexus-scratch/vvs22/koch-vla/smolvla/outputs already exists and resume is False. Please change your output directory so that /fs/nexus-scratch/vvs22/koch-vla/smolvla/outputs is not overwritten.
